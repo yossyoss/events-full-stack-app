@@ -1,0 +1,33 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "client-install": "cd client && yarn install",
+    "server-install": "cd server && yarn install",
+    "install-all-deps": "concurrently \"yarn run server-install\" \"yarn run client-install\"",
+    "run-server": "cd server && nodemon server/index.js",
+    "run-client": "cd client && yarn dev",
+    "dev": "nodemon server/index.js",
+    "start": "concurrently \"yarn run run-client\" \"yarn run run-server\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && yarn install && yarn build"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.10.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "prisma": "^4.9.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}

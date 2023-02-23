@@ -1,0 +1,67 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: #222B36;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.header {
+    font-size: 17px;
+    padding: 17px 16px 26px 16px;
+}
+
+.filter {
+    padding: 0 16px 26px 16px;
+}
+
+.title {
+    padding-bottom: 16px;
+}
+
+
+
+.MuiButtonBase-root.MuiChip-root {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiChip-deleteIcon,
+label#demo-simple-select-label {
+    color: #919EAB;
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiTablePagination-selectIcon.MuiSelect-iconStandard {
+    color: #919EAB;
+}
+
+.css-1toauia-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.87);
+    border-color: #919EAB !important;
+}
+
+.severity {
+    padding: 3px 8px 4px 8px;
+    border-radius: 8px;
+
+}
+
+.severity-low {
+    background-color: #3A90E5;
+}
+
+.severity-medium {
+    background-color: #FFB547;
+}
+
+.severity-high {
+    background-color: #F06161;
+}
+
+.sub-title {
+    color: #919EAB;
+}
